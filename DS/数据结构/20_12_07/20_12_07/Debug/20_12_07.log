@@ -1,21 +1,47 @@
-﻿生成启动时间为 2020/12/9 15:51:53。
+﻿生成启动时间为 2020/12/10 11:10:34。
      1>项目“D:\wangmei1103\软件\DS\数据结构\20_12_07\20_12_07\20_12_07.vcxproj”在节点 2 上(build 个目标)。
      1>InitializeBuildStatus:
-         正在创建“Debug\20_12_07.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+         正在对“Debug\20_12_07.unsuccessfulbuild”执行 Touch 任务。
        ClCompile:
          D:\software\VS\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TC /analyze- /errorReport:prompt list.c
          list.c
-       Link:
-         D:\software\VS\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\wangmei1103\软件\DS\数据结构\20_12_07\Debug\20_12_07.exe" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\20_12_07.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"D:\wangmei1103\软件\DS\数据结构\20_12_07\Debug\20_12_07.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\wangmei1103\软件\DS\数据结构\20_12_07\Debug\20_12_07.lib" /MACHINE:X86 Debug\list.obj
-         LINK : 没有找到 D:\wangmei1103\软件\DS\数据结构\20_12_07\Debug\20_12_07.exe 或上一个增量链接没有生成它；正在执行完全链接
-         20_12_07.vcxproj -> D:\wangmei1103\软件\DS\数据结构\20_12_07\Debug\20_12_07.exe
-       Manifest:
-         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"D:\wangmei1103\软件\DS\数据结构\20_12_07\Debug\20_12_07.exe;#1" /manifest Debug\20_12_07.exe.intermediate.manifest
-       FinalizeBuildStatus:
-         正在删除文件“Debug\20_12_07.unsuccessfulbuild”。
-         正在对“Debug\20_12_07.lastbuildstate”执行 Touch 任务。
-     1>已完成生成项目“D:\wangmei1103\软件\DS\数据结构\20_12_07\20_12_07\20_12_07.vcxproj”(build 个目标)的操作。
+     1>d:\wangmei1103\软件\ds\数据结构\20_12_07\20_12_07\list.c(120): error C2143: 语法错误 : 缺少“;”(在“类型”的前面)
+     1>d:\wangmei1103\软件\ds\数据结构\20_12_07\20_12_07\list.c(121): error C2275: “SListNode”: 将此类型用作表达式非法
+                 d:\wangmei1103\软件\ds\数据结构\20_12_07\20_12_07\list.c(12) : 参见“SListNode”的声明
+     1>d:\wangmei1103\软件\ds\数据结构\20_12_07\20_12_07\list.c(121): error C2065: “newNode”: 未声明的标识符
+     1>d:\wangmei1103\软件\ds\数据结构\20_12_07\20_12_07\list.c(122): error C2065: “newNode”: 未声明的标识符
+     1>d:\wangmei1103\软件\ds\数据结构\20_12_07\20_12_07\list.c(122): warning C4047: “=”:“SListNode *”与“int”的间接级别不同
+     1>d:\wangmei1103\软件\ds\数据结构\20_12_07\20_12_07\list.c(123): error C2065: “newNode”: 未声明的标识符
+     1>d:\wangmei1103\软件\ds\数据结构\20_12_07\20_12_07\list.c(123): error C2223: “->next”的左侧必须指向结构/联合
+     1>d:\wangmei1103\软件\ds\数据结构\20_12_07\20_12_07\list.c(123): error C2065: “next”: 未声明的标识符
+     1>d:\wangmei1103\软件\ds\数据结构\20_12_07\20_12_07\list.c(131): error C2143: 语法错误 : 缺少“;”(在“类型”的前面)
+     1>d:\wangmei1103\软件\ds\数据结构\20_12_07\20_12_07\list.c(132): error C2065: “next”: 未声明的标识符
+     1>d:\wangmei1103\软件\ds\数据结构\20_12_07\20_12_07\list.c(132): warning C4047: “!=”:“int”与“void *”的间接级别不同
+     1>d:\wangmei1103\软件\ds\数据结构\20_12_07\20_12_07\list.c(134): error C2065: “next”: 未声明的标识符
+     1>d:\wangmei1103\软件\ds\数据结构\20_12_07\20_12_07\list.c(134): error C2223: “->next”的左侧必须指向结构/联合
+     1>d:\wangmei1103\软件\ds\数据结构\20_12_07\20_12_07\list.c(135): error C2065: “next”: 未声明的标识符
+     1>d:\wangmei1103\软件\ds\数据结构\20_12_07\20_12_07\list.c(135): warning C4022: “free”: 指针与实参 1 不匹配
+     1>d:\wangmei1103\软件\ds\数据结构\20_12_07\20_12_07\list.c(143): error C2143: 语法错误 : 缺少“;”(在“类型”的前面)
+     1>d:\wangmei1103\软件\ds\数据结构\20_12_07\20_12_07\list.c(144): error C2275: “SListNode”: 将此类型用作表达式非法
+                 d:\wangmei1103\软件\ds\数据结构\20_12_07\20_12_07\list.c(12) : 参见“SListNode”的声明
+     1>d:\wangmei1103\软件\ds\数据结构\20_12_07\20_12_07\list.c(144): error C2065: “p”: 未声明的标识符
+     1>d:\wangmei1103\软件\ds\数据结构\20_12_07\20_12_07\list.c(144): error C2065: “newNode”: 未声明的标识符
+     1>d:\wangmei1103\软件\ds\数据结构\20_12_07\20_12_07\list.c(144): error C2223: “->next”的左侧必须指向结构/联合
+     1>d:\wangmei1103\软件\ds\数据结构\20_12_07\20_12_07\list.c(145): error C2065: “newNode”: 未声明的标识符
+     1>d:\wangmei1103\软件\ds\数据结构\20_12_07\20_12_07\list.c(145): error C2223: “->next”的左侧必须指向结构/联合
+     1>d:\wangmei1103\软件\ds\数据结构\20_12_07\20_12_07\list.c(146): error C2065: “p”: 未声明的标识符
+     1>d:\wangmei1103\软件\ds\数据结构\20_12_07\20_12_07\list.c(146): warning C4047: “!=”:“int”与“void *”的间接级别不同
+     1>d:\wangmei1103\软件\ds\数据结构\20_12_07\20_12_07\list.c(148): error C2065: “newNode”: 未声明的标识符
+     1>d:\wangmei1103\软件\ds\数据结构\20_12_07\20_12_07\list.c(148): error C2065: “p”: 未声明的标识符
+     1>d:\wangmei1103\软件\ds\数据结构\20_12_07\20_12_07\list.c(149): error C2065: “p”: 未声明的标识符
+     1>d:\wangmei1103\软件\ds\数据结构\20_12_07\20_12_07\list.c(149): error C2065: “p”: 未声明的标识符
+     1>d:\wangmei1103\软件\ds\数据结构\20_12_07\20_12_07\list.c(149): error C2223: “->next”的左侧必须指向结构/联合
+     1>d:\wangmei1103\软件\ds\数据结构\20_12_07\20_12_07\list.c(150): error C2065: “newNode”: 未声明的标识符
+     1>d:\wangmei1103\软件\ds\数据结构\20_12_07\20_12_07\list.c(150): error C2223: “->next”的左侧必须指向结构/联合
+     1>d:\wangmei1103\软件\ds\数据结构\20_12_07\20_12_07\list.c(151): error C2065: “newNode”: 未声明的标识符
+     1>d:\wangmei1103\软件\ds\数据结构\20_12_07\20_12_07\list.c(151): warning C4047: “=”:“SListNode *”与“int”的间接级别不同
+     1>已完成生成项目“D:\wangmei1103\软件\DS\数据结构\20_12_07\20_12_07\20_12_07.vcxproj”(build 个目标)的操作 - 失败。
 
-生成成功。
+生成失败。
 
-已用时间 00:00:00.59
+已用时间 00:00:00.31
