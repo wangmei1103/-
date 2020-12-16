@@ -2,9 +2,145 @@
 #include<stdlib.h>
 #include<stdio.h>
 #include<assert.h>
+#define SLTDateType int  
+typedef struct ListNode
+{
+	SLTDateType data;
+	struct ListNode* next;
+}SListNode;
+
+
+struct ListNode* middleNode(struct ListNode* head)
+{
+	struct ListNode* slow=head;
+	struct ListNode* fast=head;
+	while(fast && fast->next)
+	{
+		slow=slow->next;
+		fast=fast->next->next;
+	}
+	return slow;
+}
+
+struct ListNode* reverse(ListNode* head)
+{
+	if(head==NULL||head->next==NULL)
+		return head;
+	struct ListNode* newhead,*cur,*next;
+	newhead=NULL;
+	cur=head;
+	while(cur)
+	{
+		next=cur->next;
+		cur->next=newhead;
+		newhead=cur;
+		cur=next;
+	}
+	return newhead;
+}
+bool chkPalindrome(ListNode* A)
+{
+	if(A==NULL||A->next=NULL)
+		return true;
+	ListNode* middleNode(A);
+
+	ListNode* reverse(slow);
+}
+
+
+
+struct ListNode* List(struct ListNode* phead,int x)
+{
+	if(phead==NULL)
+		return phead;
+	struct ListNode* lessHead,*lessTail,*greaterHead,*greaterTail;
+	lessHead=lessTail=greaterHead=greaterTail=NULL;
+	struct ListNode* cur=phead
+;	while(cur)
+	{
+		if(cur->data<x){
+			if(lessTail==NULL)
+			{
+				lessHead=lessTail=NULL;
+			}
+			else{
+				lessTail->next=cur;
+				lessTail=lessTail->next;
+			}
+			cur=cur->next;
+		}
+		else
+		{
+			if(greaterTail==NULL)
+			{
+				greaterHead=greaterTail=NULL;
+			}
+
+			else
+			{
+				greaterTail->next=cur;
+				greaterTail=greaterTail->next;
+			}
+			cur=cur->next;
+		}
+	}
+	if (greaterTail)
+		greaterTail->next=NULL;
+	if (lessHead==NULL)
+	{
+		return greaterHead;
+	}
+	if(greaterHead==NULL)
+	{
+		if(lessTail)
+			lessTail->next=NULL;
+		return lessHead;
+	}
+	lessTail->next=greaterHead;
+	return lessHead;
+}
+
+//ÕÒÖÐµã
+struct ListNode* middleNode(struct ListNode* head)
+{
+	struct ListNode* slow=head;
+	struct ListNode* fast=head;
+	while(fast && fast->next)
+	{
+		slow=slow->next;
+		fast=fast->next->next;
+	}
+	return slow;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+#include<string.h>
+#include<stdlib.h>
+#include<stdio.h>
+#include<assert.h>
 //#include"list.h"
 
-#define SLTDateType int
+#define SLTDateType int  
 typedef struct SListNode
 {
 	SLTDateType data;
