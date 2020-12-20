@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include<stdlib.h>
-
+#include<Windows.h>
 
 typedef int STDataType;
 
@@ -25,7 +25,7 @@ void checkCapacity(stack* st)
 	if(st->_size == st->_capacity)
 	{
 		int newCap = st->_capacity ==0 ? 1 : 2 * st->_capacity;
-		st->_data = (STDataType*) malloc (st->_data,sizeof(STDataType)* newCap);
+		st->_data = (STDataType*) realloc (st->_data,sizeof(STDataType)* newCap);
 		st->_capacity = newCap;
 	}
 }
@@ -42,14 +42,15 @@ void stackPop(stack* st)
 {
 	if(st == NULL || st->_size == 0)
 		return;
-
+	--st->_size;
 }
 
 
 int stackSize(stack* st)
 {
 	if(st == NULL)
-		return;
+		return 0;
+	return st->_size;
 }
 
 int stackEmpty(stack* st)
@@ -63,4 +64,10 @@ int stackEmpty(stack* st)
 STDataType stackTop(stack* st)
 {
 	return st->_data[st->_size - 1];
+}
+
+int main()
+{
+	system("pause");
+	return 0;
 }
