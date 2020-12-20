@@ -1,0 +1,23 @@
+﻿生成启动时间为 2020/12/17 19:27:04。
+     1>项目“D:\wangmei1103\软件\DS\数据结构\20_12_13\20_12_13\20_12_13.vcxproj”在节点 2 上(build 个目标)。
+     1>InitializeBuildStatus:
+         正在对“Debug\20_12_13.unsuccessfulbuild”执行 Touch 任务。
+       ClCompile:
+         D:\software\VS\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TC /analyze- /errorReport:prompt test.c
+         test.c
+     1>d:\wangmei1103\软件\ds\数据结构\20_12_13\20_12_13\test.c(16): error C2143: 语法错误 : 缺少“;”(在“类型”的前面)
+     1>d:\wangmei1103\软件\ds\数据结构\20_12_13\20_12_13\test.c(19): error C2065: “lenA”: 未声明的标识符
+     1>d:\wangmei1103\软件\ds\数据结构\20_12_13\20_12_13\test.c(24): error C2065: “lenB”: 未声明的标识符
+     1>d:\wangmei1103\软件\ds\数据结构\20_12_13\20_12_13\test.c(28): error C2143: 语法错误 : 缺少“;”(在“类型”的前面)
+     1>d:\wangmei1103\软件\ds\数据结构\20_12_13\20_12_13\test.c(29): error C2065: “lenA”: 未声明的标识符
+     1>d:\wangmei1103\软件\ds\数据结构\20_12_13\20_12_13\test.c(29): error C2065: “lenB”: 未声明的标识符
+     1>d:\wangmei1103\软件\ds\数据结构\20_12_13\20_12_13\test.c(31): error C2065: “gap”: 未声明的标识符
+     1>d:\wangmei1103\软件\ds\数据结构\20_12_13\20_12_13\test.c(37): error C2065: “gap”: 未声明的标识符
+     1>d:\wangmei1103\软件\ds\数据结构\20_12_13\20_12_13\test.c(55): error C2061: 语法错误: 标识符“hasCycle”
+     1>d:\wangmei1103\软件\ds\数据结构\20_12_13\20_12_13\test.c(55): error C2059: 语法错误:“;”
+     1>d:\wangmei1103\软件\ds\数据结构\20_12_13\20_12_13\test.c(55): error C2059: 语法错误:“类型”
+     1>已完成生成项目“D:\wangmei1103\软件\DS\数据结构\20_12_13\20_12_13\20_12_13.vcxproj”(build 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:00.13
