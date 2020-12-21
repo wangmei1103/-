@@ -1,0 +1,171 @@
+//设计循环队列
+
+
+
+
+
+//栈实现队列
+
+typedef struct {
+    struct pushST;
+    struct popST;
+} MyQueue;
+
+/** Initialize your data structure here. */
+
+MyQueue* myQueueCreate() {
+    MyQueue* pq = (MyQueue*)malloc(sizeof(MyQueue));
+    initStack(&pq->pushST);
+    initStack(&pq->popST);
+    return pq;
+}
+
+/** Push element x to the back of queue. */
+void myQueuePush(MyQueue* obj, int x) {
+    stackPush(&obj->pushST,x);
+}
+
+/** Removes the element from in front of queue and returns that element. */
+int myQueuePop(MyQueue* obj) {
+    int front;
+    if(!stackEmppty(&obj->popST))
+    {
+        front = stackTop(&obj->popST);
+        stackPop(&obj->popST);
+    }
+    else
+    {
+        while(!stackEmppty(&obj->pushST))
+        {
+            stackPush(&obj->popST,stackTop(&obj->pushST));
+            stackPop(&obj->pushST);
+        }
+        front = stackTop(&obj->popST);
+        stackPop(&obj->popST);
+    }
+    return front;
+}
+
+/** Get the front element. */
+int myQueuePeek(MyQueue* obj) {
+    if(!stackEmppty(&obj->popST))
+    while(!stackEmppty(&obj->pushST))
+        {
+            stackPush(&obj->popST,stackTop(&obj->pushST));
+            stackPop(&obj->pushST);
+        }
+    }
+    return stackTop(&obj->popST);
+}
+
+/** Returns whether the queue is empty. */
+bool myQueueEmpty(MyQueue* obj) {
+    return stackEmppty(&obj->pushST) && stackEmppty(&obj->popST);
+}
+
+void myQueueFree(MyQueue* obj) {
+    stackDestroy(&obj->pushST);
+    stackDestroy(&obj->popST);
+    free(obj);
+}
+
+//队列实现栈
+
+typedef struct {
+    //队列成员
+    struct Queue q;
+} MyStack;
+
+/** Initialize your data structure here. */
+
+MyStack* myStackCreate() {
+    //动态创建
+    MyStack* pst = (MyStack*)malloc(sizeof(MyStack));
+    initQueue(&pst->q)
+    return pst;
+}
+
+/** Push element x onto stack. */
+void myStackPush(MyStack* obj, int x) {
+    queuePush(&obj->q,x);
+}
+
+/** Removes the element on top of the stack and returns that element. */
+int myStackPop(MyStack* obj) {
+    int n = queueSize(&obj->q);
+    while(n>q)
+    {
+        int front queueFront(&obj->q);
+        queuePush(&obj->q,front);
+        --n;
+    }
+    int top = queueFront(&obj->q);
+    queuePop(&obj->q);
+    return top;
+}
+
+/** Get the top element. */
+int myStackTop(MyStack* obj) {
+    return queueBack(&obj->q);
+}
+
+/** Returns whether the stack is empty. */
+bool myStackEmpty(MyStack* obj) {
+    return queueEmpty(&obj->q);
+}
+
+void myStackFree(MyStack* obj) {
+    queueDestory(&obj->q);
+    free(obj);
+}
+
+
+//有效的括号
+
+bool isValid(char * s){
+    //括号的映射
+    char map[3][2]={{'(',')'},{'[',']'},{'{','}'}};
+    struct stack st;
+    int flag=0;
+    initStack(&st);
+    while(*s)
+    {
+        //左括号   入栈
+        for(int i = 0;i < 3;i++)
+        {
+            if(*s == map[i][0])
+            {
+                stackPush(&st,*s);
+                ++s;
+                flag=1;
+                break;
+            }
+        }
+        //右括号
+        if(flag == 0)
+        {
+            if(stackEmpty(&st))
+                return false;
+            //取出栈顶元素：左括号
+            char topChar = stackTop(&st);
+            stackTop(&st);
+            //找到当前字符*s对应的左括号
+            for(int i = 0; i < 3;i++)
+            {
+                if(map[i][1]==*s)
+                {
+                    if(topChar == map[i][0])
+                    {
+                        //判断一个字符
+                        ++s;
+                        break;
+                    }
+                    else{
+                        return false;
+                    }
+                }
+            }
+        }
+    }
+    return stackEmpty(&st);
+}
