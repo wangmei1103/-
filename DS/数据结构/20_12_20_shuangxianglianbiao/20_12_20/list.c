@@ -3,7 +3,7 @@
 #include<string.h>
 #include<Windows.h>
 
-void listInsert(ListNode* node,LDataType val);
+//void listInsert(ListNode* node,LDataType val);
 
 typedef int LDataType;
 typedef struct ListNode
@@ -111,6 +111,7 @@ void listErase(ListNode* node)
 void printList(List* lst)
 {
 	struct ListNode* cur;
+	cur = lst->_head->_next;
 	while(cur != lst->_head)
 	{
 		printf("%d ",cur->_data);
