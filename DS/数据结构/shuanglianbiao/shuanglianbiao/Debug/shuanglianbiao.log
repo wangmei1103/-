@@ -1,0 +1,6 @@
+﻿  list.c
+d:\wangmei1103\软件\ds\数据结构\shuanglianbiao\shuanglianbiao\list.c(15): warning C4013: “malloc”未定义；假设外部返回 int
+d:\wangmei1103\软件\ds\数据结构\shuanglianbiao\shuanglianbiao\list.c(27): warning C4013: “free”未定义；假设外部返回 int
+d:\wangmei1103\软件\ds\数据结构\shuanglianbiao\shuanglianbiao\list.c(94): warning C4033: “ListFind”必须返回值
+d:\wangmei1103\软件\ds\数据结构\shuanglianbiao\shuanglianbiao\list.c(103): warning C4715: “ListFind”: 不是所有的控件路径都返回值
+  shuanglianbiao.vcxproj -> D:\wangmei1103\软件\DS\数据结构\shuanglianbiao\Debug\shuanglianbiao.exe
