@@ -1,0 +1,7 @@
+﻿  queue.c
+d:\wangmei1103\软件\ds\数据结构\stack_queue\stack_queue\queue.c(30): warning C4013: “malloc”未定义；假设外部返回 int
+d:\wangmei1103\软件\ds\数据结构\stack_queue\stack_queue\queue.c(53): warning C4013: “free”未定义；假设外部返回 int
+  stack.c
+  正在生成代码...
+d:\wangmei1103\软件\ds\数据结构\stack_queue\stack_queue\queue.c(33): warning C4716: “createNode”: 必须返回一个值
+  stack_queue.vcxproj -> D:\wangmei1103\软件\DS\数据结构\stack_queue\Debug\stack_queue.exe
