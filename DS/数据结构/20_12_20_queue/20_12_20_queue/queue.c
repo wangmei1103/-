@@ -82,12 +82,6 @@ QDataType queueBack(Queue* q)
 	return q->_tail->_data;
 }
 
-int queueEmpty(Queue* q)
-{
-	if (q == NULL)
-		return;
-	return q->_size;
-}
 
 int queueEmpty(Queue* q)
 {
