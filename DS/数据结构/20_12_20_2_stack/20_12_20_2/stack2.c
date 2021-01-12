@@ -1,3 +1,4 @@
+/*
 #include "seqList.h"
 //已经实现了一个顺序表
 typedef struct stack2
@@ -34,3 +35,4 @@ int stackEmpty(stack2* st)
 {
 	return seqListSize(&st->_sq) == 0;
 }
+*/

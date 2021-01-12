@@ -3,6 +3,7 @@
 #include<string.h>
 #include<Windows.h>
 
+
 //void listInsert(ListNode* node,LDataType val);
 
 typedef int LDataType;

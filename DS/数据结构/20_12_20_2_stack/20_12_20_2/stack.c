@@ -32,6 +32,7 @@ void checkCapacity(stack* st)
 
 void stackPush(stack* st,STDataType val)
 {
+	//Î²²å
 	if(st == NULL)
 		return;
 	checkCapacity(st);
@@ -66,8 +67,24 @@ STDataType stackTop(stack* st)
 	return st->_data[st->_size - 1];
 }
 
+void test()
+{
+	stack st;
+	initStack(&st);
+	stackPush(&st,1);
+	stackPush(&st,2);
+	stackPush(&st,3);
+	while(!stackTop(&st))
+	{
+		printf("%d",stackTop(&st));
+		stackPop(&st);
+	}
+	printf("\n");
+}
+
 int main()
 {
+	test();
 	system("pause");
 	return 0;
 }
