@@ -68,11 +68,13 @@ int StackEmpty(Stack* ps)
 // Ïú»ÙÕ» 
 void StackDestroy(Stack* ps)
 {
-	if (ps->_a)
-	{
-		free(ps->_a);
-		ps->_a = NULL;
-		ps->_size = ps->_capacity = 0;
+	if(ps){
+		if (ps->_a)
+		{
+			free(ps->_a);
+			ps->_a = NULL;
+			ps->_size = ps->_capacity = 0;
+		}
 	}
 }
 int main()
