@@ -18,5 +18,11 @@
     <ClCompile Include="heap.c">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="heap1.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="test.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
