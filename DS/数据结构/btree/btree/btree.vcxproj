@@ -123,6 +123,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="betree.c" />
+    <ClCompile Include="btree1.c" />
     <ClCompile Include="heap.c" />
     <ClCompile Include="heap1.c" />
     <ClCompile Include="test.c" />
