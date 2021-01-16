@@ -1,0 +1,15 @@
+﻿生成启动时间为 2021/1/17 0:02:13。
+     1>项目“D:\wangmei1103\软件\DS\数据结构\20_12_20_queue\20_12_20_queue\20_12_20_queue.vcxproj”在节点 2 上(build 个目标)。
+     1>InitializeBuildStatus:
+         正在对“Debug\20_12_20_queue.unsuccessfulbuild”执行 Touch 任务。
+       ClCompile:
+         D:\software\VS\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TC /analyze- /errorReport:prompt queue.c
+         queue.c
+     1>d:\wangmei1103\软件\ds\数据结构\20_12_20_queue\20_12_20_queue\queue.c(59): error C2143: 语法错误 : 缺少“;”(在“类型”的前面)
+     1>d:\wangmei1103\软件\ds\数据结构\20_12_20_queue\20_12_20_queue\queue.c(61): error C2065: “next”: 未声明的标识符
+     1>d:\wangmei1103\软件\ds\数据结构\20_12_20_queue\20_12_20_queue\queue.c(61): warning C4047: “=”:“QNode *”与“int”的间接级别不同
+     1>已完成生成项目“D:\wangmei1103\软件\DS\数据结构\20_12_20_queue\20_12_20_queue\20_12_20_queue.vcxproj”(build 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:00.73
