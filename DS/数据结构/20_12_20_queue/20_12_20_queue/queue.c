@@ -88,7 +88,7 @@ int queueEmpty(Queue* q)
 	return q->_head == NULL;
 }
 
-void queueDeatroy(Queue* q)
+void queueDestroy(Queue* q)
 {
 	QNode* cur = q->_head;
 	while(cur)
