@@ -254,3 +254,23 @@ int main()
 	return 0;
 }
 */
+
+void swap(int* tmp)
+{
+	
+}
+struct TreeNode* invertTree(struct TreeNode* root)
+{
+	if (root == NULL)
+		return NULL;
+	/*struct TreeNode* left = root->_left;
+	struct TreeNode* right = root->_right;
+	root->_left = right;
+	root->_right = left;*/
+	struct TreeNode* tmp = root->_left;
+	root->_left = root->_right;
+	root->_right = tmp;
+	invertTree(root->_left);
+	invertTree(root->_right);
+	return root;
+}

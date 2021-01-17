@@ -142,7 +142,162 @@ void bTreeDestroy(Node** root)
 		*root = NULL;
 	}
 }
+//队尾入队，队头出队
 
+typedef Node* QDataType;
+
+typedef struct QNode
+{
+	struct QNode* _next;
+	QDataType _data;
+}QNode;
+
+// 队列的结构
+typedef struct Queue
+{
+	//头尾指针
+	QNode* _head;
+	QNode* _tail;
+	int _size;
+}Queue;
+struct QNode* creatNode(QDataType val)
+{
+	struct QNode* node = (QNode*)malloc(sizeof(QNode));
+	node->_data = val;
+	node->_next = NULL;
+}
+//初始化
+void initQueue(Queue* q)
+{
+	//空队列
+	if (q == NULL)
+		return;
+	q->_head = q->_tail = NULL;
+	q->_size = 0;
+}
+void queuePush(Queue* q, QDataType val)
+{
+	struct	QNode* node = creatNode(val);
+	if (q->_head == NULL)
+		q->_head = q->_tail = node;
+	else {
+		q->_tail->_next = node;
+		q->_tail = node;
+	}
+	++q->_size;
+}
+void queuePop(Queue* q)
+{
+	if (q == NULL || q->_head == NULL)
+		return;
+	struct QNode* next = q->_head->_next;
+	free(q->_head);
+	q->_head = next;
+	if (q->_head == NULL)
+		q->_tail = NULL;
+	--q->_size;
+}
+QDataType queueFront(Queue* q)
+{
+	//if (q == NULL)
+	//	return NULL;
+	return q->_head->_data;
+}
+int queueEmpty(Queue* q)
+{
+	return q->_head == NULL;
+}
+
+void queueDestroy(Queue* q)
+{
+	QNode* cur = q->_head;
+	while (cur)
+	{
+		QNode* next = cur->_next;
+		free(cur);
+		cur = q->_head;
+	}
+}
+
+void bTreeLevelOrder(Node* root)
+{
+	Queue q;
+	initQueue(&q);
+	if (root)
+		queuePush(&q,root);
+	while (!queueEmpty(&q))
+	{
+		Node* node = queueFront(&q);
+		queuePop(&q);
+		printf("%c ", node->_data);
+		if (node->_left)
+			queuePush(&q,node->_left);
+		if (node->_right)
+			queuePush(&q, node->_right);
+	}
+	printf("\n");
+}
+//完全二叉树
+int isCompleteBtree(Node* root)
+{
+	Queue q;
+	initQueue(&q);
+	if (root)
+		queuePush(&q, root);
+	while (!queueEmpty(&q))
+	{
+		//获取队头元素
+		Node* node = queueFront(&q);
+		queuePop(&q);
+		//左右孩子入队
+		if (node)
+		{
+			queuePush(&q, node->_left);
+			queuePush(&q, node->_right);
+		}
+		else
+			break;
+	}
+	while (!queueEmpty(&q))
+	{
+		Node* node = queueFront(&q);
+		if (node)
+			return 0;
+	}
+	return 1;
+}
+
+////链表判断
+//void push_back(list*, Node*);
+//void pop_front(list*);
+//Node* head(list*);
+//int listEmpty(list*);
+//int isCompleteBtree(Node* root)
+//{
+//	list* p;
+//	if (root)
+//		push_back(&p, root);
+//	while (!listEmpty(&p))
+//	{
+//		Node* node = head(&p);
+//		pop_front(&p);
+//		if (node)
+//		{
+//			push_back(&p, node->_left);
+//			push_back(&p, node->_right);
+//		}
+//		else
+//			break;
+//	}
+//	while (!listEmpty(&p))
+//	{
+//		Node* node = head(&p);
+//		pop_front(&p);
+//		if (node)
+//			return 0;
+//	}
+//	return 1;
+//}
 void test()
 {
 	char arr[] = "ABD##E#H##CF##G##";

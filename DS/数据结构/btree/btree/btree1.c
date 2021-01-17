@@ -1,3 +1,4 @@
+
 #include<stdlib.h>
 #include<stdio.h>
 
@@ -192,54 +193,96 @@ void queueDestroy(Queue* q)
 // 层序遍历
 void BinaryTreeLevelOrder(BTNode* root)
 {
+	//Queue q;
+	//BTNode* node;
+	//initQueue(&q);
+	//queuePush(&q, root);
+	//while (!queueEmpty(&q))
+	//{
+	//	//获取队头元素
+	//	node = queueFront(&q);
+	//	printf("%c ", node->_data);
+	//	if (node->_left)
+	//	{
+	//		queuePush(&q, node->_left);
+	//	}
+	//	if (node->_right)
+	//	{
+	//		queuePush(&q, node->_right);
+	//	}
+	//	queuePop(&q);
+	//}
+	//queueDestroy(&q);
+	//printf("\n");
 	Queue q;
-	BTNode* node;
 	initQueue(&q);
-	queuePush(&q, root);
+	if (root)
+		queuePush(&q, root);
 	while (!queueEmpty(&q))
 	{
-		node = queueFront(&q);
+		BTNode* node = queueFront(&q);
+		queuePop(&q);
 		printf("%c ", node->_data);
 		if (node->_left)
-		{
 			queuePush(&q, node->_left);
-		}
 		if (node->_right)
-		{
 			queuePush(&q, node->_right);
-		}
-		queuePop(&q);
 	}
-	queueDestroy(&q);
+	printf("\n");
 }
 // 判断二叉树是否是完全二叉树
 int BinaryTreeComplete(BTNode* root)
 {
+	//Queue q;
+	//BTNode* node;
+	//int tag = 0;
+	//initQueue(&q);
+	//queuePush(&q, root);
+	//while (!queueEmpty(&q))
+	//{
+	//	node = queueFront(&q);
+	//	if (node->_right && !node->_left)
+	//		return 0;
+	//	if (tag && (node->_right || node->_left))
+	//		return 0;
+	//	if (node->_left)
+	//	{
+	//		queuePush(&q, node->_left);
+	//	}
+	//	if (node->_right)
+	//	{
+	//		queuePush(&q, node->_right);
+	//	}
+	//	else
+	//		tag = 1;
+	//	queuePop(&q);
+	//}
+	//queueDestroy(&q);
+	//return 1;
 	Queue q;
-	BTNode* node;
-	int tag = 0;
 	initQueue(&q);
-	queuePush(&q, root);
+	if (root)
+		queuePush(&q, root);
 	while (!queueEmpty(&q))
 	{
-		node = queueFront(&q);
-		if (node->_right && !node->_left)
-			return 0;
-		if (tag && (node->_right || node->_left))
-			return 0;
-		if (node->_left)
+		//获取队头元素
+		BTNode* node = queueFront(&q);
+		queuePop(&q);
+		//左右孩子入队
+		if (node)
 		{
 			queuePush(&q, node->_left);
-		}
-		if (node->_right)
-		{
 			queuePush(&q, node->_right);
 		}
 		else
-			tag = 1;
-		queuePop(&q);
+			break;
 	}
-	queueDestroy(&q);
+	while (!queueEmpty(&q))
+	{
+		BTNode* node = queueFront(&q);
+		if (node)
+			return 0;
+	}
 	return 1;
 }
 

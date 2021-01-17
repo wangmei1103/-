@@ -1,18 +1,21 @@
-﻿  btree1.c
-d:\wangmei1103\软件\ds\数据结构\btree\btree\btree1.c(174): warning C4047: “return”:“QDataType”与“void *”的间接级别不同
-d:\wangmei1103\软件\ds\数据结构\btree\btree\btree1.c(198): warning C4047: “函数”:“QDataType”与“BTNode *”的间接级别不同
-d:\wangmei1103\软件\ds\数据结构\btree\btree\btree1.c(198): warning C4024: “queuePush”: 形参和实参 2 的类型不同
-d:\wangmei1103\软件\ds\数据结构\btree\btree\btree1.c(201): warning C4047: “=”:“BTNode *”与“QDataType”的间接级别不同
-d:\wangmei1103\软件\ds\数据结构\btree\btree\btree1.c(205): warning C4047: “函数”:“QDataType”与“BinaryTreeNode *”的间接级别不同
-d:\wangmei1103\软件\ds\数据结构\btree\btree\btree1.c(205): warning C4024: “queuePush”: 形参和实参 2 的类型不同
-d:\wangmei1103\软件\ds\数据结构\btree\btree\btree1.c(209): warning C4047: “函数”:“QDataType”与“BinaryTreeNode *”的间接级别不同
-d:\wangmei1103\软件\ds\数据结构\btree\btree\btree1.c(209): warning C4024: “queuePush”: 形参和实参 2 的类型不同
-d:\wangmei1103\软件\ds\数据结构\btree\btree\btree1.c(222): warning C4047: “函数”:“QDataType”与“BTNode *”的间接级别不同
-d:\wangmei1103\软件\ds\数据结构\btree\btree\btree1.c(222): warning C4024: “queuePush”: 形参和实参 2 的类型不同
-d:\wangmei1103\软件\ds\数据结构\btree\btree\btree1.c(225): warning C4047: “=”:“BTNode *”与“QDataType”的间接级别不同
-d:\wangmei1103\软件\ds\数据结构\btree\btree\btree1.c(232): warning C4047: “函数”:“QDataType”与“BinaryTreeNode *”的间接级别不同
-d:\wangmei1103\软件\ds\数据结构\btree\btree\btree1.c(232): warning C4024: “queuePush”: 形参和实参 2 的类型不同
-d:\wangmei1103\软件\ds\数据结构\btree\btree\btree1.c(236): warning C4047: “函数”:“QDataType”与“BinaryTreeNode *”的间接级别不同
-d:\wangmei1103\软件\ds\数据结构\btree\btree\btree1.c(236): warning C4024: “queuePush”: 形参和实参 2 的类型不同
-d:\wangmei1103\软件\ds\数据结构\btree\btree\btree1.c(139): warning C4716: “creatNode”: 必须返回一个值
+﻿  betree.c
+  btree1.c
+d:\wangmei1103\软件\ds\数据结构\btree\btree\btree1.c(175): warning C4047: “return”:“QDataType”与“void *”的间接级别不同
+d:\wangmei1103\软件\ds\数据结构\btree\btree\btree1.c(220): warning C4047: “函数”:“QDataType”与“BTNode *”的间接级别不同
+d:\wangmei1103\软件\ds\数据结构\btree\btree\btree1.c(220): warning C4024: “queuePush”: 形参和实参 2 的类型不同
+d:\wangmei1103\软件\ds\数据结构\btree\btree\btree1.c(227): warning C4047: “函数”:“QDataType”与“BinaryTreeNode *”的间接级别不同
+d:\wangmei1103\软件\ds\数据结构\btree\btree\btree1.c(227): warning C4024: “queuePush”: 形参和实参 2 的类型不同
+d:\wangmei1103\软件\ds\数据结构\btree\btree\btree1.c(229): warning C4047: “函数”:“QDataType”与“BinaryTreeNode *”的间接级别不同
+d:\wangmei1103\软件\ds\数据结构\btree\btree\btree1.c(229): warning C4024: “queuePush”: 形参和实参 2 的类型不同
+d:\wangmei1103\软件\ds\数据结构\btree\btree\btree1.c(223): warning C4047: “初始化”:“BTNode *”与“QDataType”的间接级别不同
+d:\wangmei1103\软件\ds\数据结构\btree\btree\btree1.c(265): warning C4047: “函数”:“QDataType”与“BTNode *”的间接级别不同
+d:\wangmei1103\软件\ds\数据结构\btree\btree\btree1.c(265): warning C4024: “queuePush”: 形参和实参 2 的类型不同
+d:\wangmei1103\软件\ds\数据结构\btree\btree\btree1.c(274): warning C4047: “函数”:“QDataType”与“BinaryTreeNode *”的间接级别不同
+d:\wangmei1103\软件\ds\数据结构\btree\btree\btree1.c(274): warning C4024: “queuePush”: 形参和实参 2 的类型不同
+d:\wangmei1103\软件\ds\数据结构\btree\btree\btree1.c(275): warning C4047: “函数”:“QDataType”与“BinaryTreeNode *”的间接级别不同
+d:\wangmei1103\软件\ds\数据结构\btree\btree\btree1.c(275): warning C4024: “queuePush”: 形参和实参 2 的类型不同
+d:\wangmei1103\软件\ds\数据结构\btree\btree\btree1.c(269): warning C4047: “初始化”:“BTNode *”与“QDataType”的间接级别不同
+d:\wangmei1103\软件\ds\数据结构\btree\btree\btree1.c(282): warning C4047: “初始化”:“BTNode *”与“QDataType”的间接级别不同
+  正在生成代码...
+d:\wangmei1103\软件\ds\数据结构\btree\btree\btree1.c(140): warning C4716: “creatNode”: 必须返回一个值
   btree.vcxproj -> D:\wangmei1103\软件\DS\数据结构\btree\Debug\btree.exe
